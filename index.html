@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – IT Audit & Governance Professional</title>
+  <meta name="description"
+    content="Portfolio profesional di bidang IT Audit, IT Governance, dan Internal Audit. Berpengalaman dalam ISO 27001, ISO 20000, dan BSSN IKAS Framework." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-canvas" id="bgCanvas"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Portfolio</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+        <li><a href="#gallery" class="nav-link" id="nav-gallery">Galeri</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-greeting">Halo, saya</span>
+        <span class="hero-name" id="heroName">Nabilah Rahmah Diyanah</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-text" id="roleText"></span>
+        <span class="role-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Fresh graduate yang memiliki pengalaman magang 1 tahun dalam tata kelola IT (IT Governance), audit kepatuhan standar ISO, evaluasi keamanan informasi, serta analisis data operasional.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary" id="btnExperience">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+            </path>
+          </svg>
+          Lihat Pengalaman
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btnContact">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,12 2,6"></polyline>
+          </svg>
+          Hubungi Saya
+        </a>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Tahun<br>Internship</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Framework<br>Dikuasai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Proyek<br>IT Audit</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Sertifikasi<br>Dimiliki</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-container">
+        <div class="profile-ring ring-1"></div>
+        <div class="profile-ring ring-2"></div>
+        <div class="profile-ring ring-3"></div>
+        <div class="profile-img-wrap">
+          <img src="assets/profile.png" alt="Profile Photo" class="profile-img" id="profileImg"
+            onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex'" />
+          <div class="profile-fallback" id="profileFallback">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="float-badge badge-iso" id="badgeISO">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          ISO 27001
+        </div>
+        <div class="float-badge badge-audit" id="badgeAudit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11l3 3L22 4"></path>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+          </svg>
+          IT Audit
+        </div>
+        <div class="float-badge badge-bi" id="badgeBI">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          Power BI
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-text">Scroll Down</div>
+      <div class="scroll-arrow">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">Tentang Saya</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">
+            Saya tertarik berkarir di bidang IT Audit, IT Governance, maupun Internal Audit.
+          </p>
+          <p>
+            Selama 12 bulan magang di <strong>PT Telkom Satelit Indonesia</strong>, saya terlibat langsung dalam mendukung proses kepatuhan internal dan audit eksternal sertifikasi standar <strong>ISO 27001:2022</strong> (Manajemen Keamanan Informasi) serta <strong>ISO 20000-1:2018</strong> (Manajemen Layanan TI).
+          </p>
+          <p>
+            Selain itu, saya berpartisipasi dalam audit kepatuhan keamanan informasi melalui framework <strong>IKAS</strong>, mengolah data perilaku karyawan triwulanan dari sistem <strong>SAP</strong> menggunakan Excel, serta melakukan pembaruan berkala pada visualisasi data dashboard <strong>Power BI</strong>.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎯</div>
+              <div>
+                <strong>Fokus Karir</strong>
+                <p>Mengembangkan sistem tata kelola IT yang andal, aman, dan patuh regulasi.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">📍</div>
+              <div>
+                <strong>Lokasi</strong>
+                <p>Malang, Jawa Timur (terbuka untuk Remote &amp; On-site)</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🎓</div>
+              <div>
+                <strong>Status</strong>
+                <p>Fresh Graduate – Menunggu SKL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card" id="card1">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>IT Governance</h3>
+            <p>Pengelolaan tata kelola IT berbasis ISO 27001 & ISO 20000 untuk keamanan dan efisiensi sistem</p>
+          </div>
+          <div class="info-card" id="card2">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+            <h3>IT Audit</h3>
+            <p>Audit kepatuhan framework ISO (internal &amp; eksternal) dan IKAS untuk memastikan standar keamanan siber
+              terpenuhi</p>
+          </div>
+          <div class="info-card" id="card3">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3>Data Analysis</h3>
+            <p>Analisis & visualisasi data menggunakan Excel, SAP, dan Power BI untuk insight berbasis data</p>
+          </div>
+          <div class="info-card" id="card4">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>Risk Management</h3>
+            <p>Identifikasi dan mitigasi risiko IT sesuai standar internasional dan regulasi keamanan nasional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Skills & Keahlian</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Framework & Standards -->
+        <div class="skill-category" id="skillCat1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛡️</div>
+            <h3>Framework & Standards</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">ISO 27001:2022</span>
+            <span class="skill-tag tag-primary">ISO 20000-1:2018</span>
+            <span class="skill-tag tag-primary">IKAS Framework</span>
+            <span class="skill-tag tag-secondary">IT Governance</span>
+            <span class="skill-tag tag-secondary">Risk Assessment</span>
+            <span class="skill-tag tag-secondary">Audit Documentation</span>
+          </div>
+        </div>
+
+        <!-- Audit & Compliance -->
+        <div class="skill-category" id="skillCat2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🔍</div>
+            <h3>Audit & Compliance</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">IT Audit</span>
+            <span class="skill-tag tag-primary">Internal Audit</span>
+            <span class="skill-tag tag-secondary">Compliance Review</span>
+            <span class="skill-tag tag-secondary">Gap Analysis</span>
+            <span class="skill-tag tag-secondary">Audit Documentation</span>
+            <span class="skill-tag tag-secondary">Control Testing</span>
+          </div>
+        </div>
+
+        <!-- Tools & Technology -->
+        <div class="skill-category" id="skillCat3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⚙️</div>
+            <h3>Tools & Technology</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Microsoft Power BI</span>
+            <span class="skill-tag tag-primary">SAP</span>
+            <span class="skill-tag tag-primary">Microsoft Excel</span>
+            <span class="skill-tag tag-secondary">Microsoft Office Suite</span>
+            <span class="skill-tag tag-secondary">Data Visualization</span>
+            <span class="skill-tag tag-secondary">Dashboard Design</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category" id="skillCat4">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💡</div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-soft">Analytical Thinking</span>
+            <span class="skill-tag tag-soft">Attention to Detail</span>
+            <span class="skill-tag tag-soft">Team Collaboration</span>
+            <span class="skill-tag tag-soft">Problem Solving</span>
+            <span class="skill-tag tag-soft">Report Writing</span>
+            <span class="skill-tag tag-soft">Time Management</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proficiency Bars -->
+      <div class="proficiency-section">
+        <h3 class="prof-title">Tingkat Keahlian</h3>
+        <div class="prof-bars">
+          <div class="prof-item">
+            <div class="prof-header">
+              <span class="prof-name">ISO 27001 & IT Governance</span>
+              <span class="prof-pct">82%</span>
+            </div>
+            <div class="prof-bar-bg">
+              <div class="prof-bar-fill" data-width="82" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span class="prof-name">IT Audit & Compliance</span>
+              <span class="prof-pct">78%</span>
+            </div>
+            <div class="prof-bar-bg">
+              <div class="prof-bar-fill" data-width="78" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span class="prof-name">Microsoft Excel & Data Analysis</span>
+              <span class="prof-pct">85%</span>
+            </div>
+            <div class="prof-bar-bg">
+              <div class="prof-bar-fill" data-width="85" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span class="prof-name">Power BI & Dashboard</span>
+              <span class="prof-pct">75%</span>
+            </div>
+            <div class="prof-bar-bg">
+              <div class="prof-bar-fill" data-width="75" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header">
+              <span class="prof-name">SAP (Data Processing)</span>
+              <span class="prof-pct">60%</span>
+            </div>
+            <div class="prof-bar-bg">
+              <div class="prof-bar-fill" data-width="60" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Pengalaman Kerja</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" id="timelineItem1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="exp-header">
+              <div class="exp-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                </svg>
+              </div>
+              <div class="exp-info">
+                <h3 class="exp-title">IT Governance & Audit Intern</h3>
+                <div class="exp-company">PT Telkom Satelit Indonesia (Telkomsat)</div>
+                <div class="exp-meta">
+                  <span class="exp-period">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Jan 2025 – Des 2025 (12 Bulan)
+                  </span>
+                  <span class="exp-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Indonesia
+                  </span>
+                </div>
+              </div>
+              <div class="exp-badge">Full-time Internship</div>
+            </div>
+
+            <div class="exp-tasks">
+              <div class="task-item" id="task1">
+                <div class="task-icon task-icon-shield">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div class="task-content">
+                  <strong>IT Governance Management</strong>
+                  <p>Mengelola IT Governance menggunakan framework <span class="tag-inline">ISO 27001</span> dan <span
+                      class="tag-inline">ISO 20000</span> untuk memastikan tata kelola sistem informasi berjalan sesuai
+                    standar internasional</p>
+                </div>
+              </div>
+
+              <div class="task-item" id="task2">
+                <div class="task-icon task-icon-audit">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                </div>
+                <div class="task-content">
+                  <strong>Internal Audit &#8211; ISO 27001:2022 &amp; ISO 20000-1:2018</strong>
+                  <p>Ikut serta dalam proses <span class="tag-inline">Internal Audit</span> untuk memastikan kesesuaian
+                    implementasi <span class="tag-inline">ISO 27001:2022</span> (ISMS) dan <span class="tag-inline">ISO
+                      20000-1:2018</span> (ITSM) sebelum audit eksternal dilaksanakan</p>
+                </div>
+              </div>
+
+              <div class="task-item" id="task3">
+                <div class="task-icon task-icon-cert">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"></path>
+                  </svg>
+                </div>
+                <div class="task-content">
+                  <strong>Eksternal Audit &#8211; ISO 27001:2022 &amp; ISO 20000-1:2018</strong>
+                  <p>Terlibat dalam proses <span class="tag-inline">Eksternal Audit</span> oleh lembaga sertifikasi
+                    internasional untuk perolehan/pemeliharaan sertifikasi <span class="tag-inline">ISO
+                      27001:2022</span> dan <span class="tag-inline">ISO 20000-1:2018</span></p>
+                </div>
+              </div>
+
+              <div class="task-item" id="task4">
+                <div class="task-icon task-icon-data">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div class="task-content">
+                  <strong>Audit CSIRT &#8211; Framework IKAS oleh BSSN</strong>
+                  <p>Ikut serta dalam proses audit <span class="tag-inline">CSIRT</span> menggunakan <span
+                      class="tag-inline">IKAS Framework</span> yang dilaksanakan oleh Badan Siber dan Sandi Negara
+                    (BSSN) untuk evaluasi kapabilitas keamanan siber organisasi</p>
+                </div>
+              </div>
+
+              <div class="task-item" id="task5">
+                <div class="task-icon task-icon-bi">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="task-content">
+                  <strong>Data Analysis &amp; Visualization &#8211; SAP &amp; Power BI</strong>
+                  <p>Mendukung analisis data karyawan dari <span class="tag-inline">SAP</span> menggunakan <span
+                      class="tag-inline">Excel</span> (per tiga bulan) dan pembaruan data bulanan untuk visualisasi
+                    interaktif pada <span class="tag-inline">Power BI Dashboard</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-frameworks">
+              <span class="fw-badge">ISO 27001:2022</span>
+              <span class="fw-badge">ISO 20000-1:2018</span>
+              <span class="fw-badge">IKAS Framework</span>
+              <span class="fw-badge">SAP</span>
+              <span class="fw-badge">Power BI</span>
+              <span class="fw-badge">Excel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Evidence</span>
+        <h2 class="section-title">Dokumentasi Sertifikat Magang</h2>
+        <p class="section-sub">Sertifikat bukti penyelesaian magang di PT Telkom Satelit Indonesia.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Sertifikat Magang S6 -->
+        <div class="gallery-item" data-category="sertifikat" id="galleryItem1">
+          <div class="gallery-img-wrap"
+            onclick="openLightbox('assets/Magang S6.jpeg', 'Sertifikat Magang (S6) – PT Telkom Satelit Indonesia')">
+            <img src="assets/Magang S6.jpeg" alt="Sertifikat Magang S6 PT Telkomsat" class="gallery-img" />
+            <div class="gallery-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+              <span>Perbesar</span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <div class="gallery-cat-badge cat-sertifikat">Sertifikat</div>
+            <h4>Sertifikat Magang S6</h4>
+            <p>PT Telkom Satelit Indonesia &bull; 2025</p>
+          </div>
+        </div>
+
+        <!-- Sertifikat Magang S7 -->
+        <div class="gallery-item" data-category="sertifikat" id="galleryItem2">
+          <div class="gallery-img-wrap"
+            onclick="openLightbox('assets/Magang S7.png', 'Sertifikat Magang (S7) – PT Telkom Satelit Indonesia')">
+            <img src="assets/Magang S7.png" alt="Sertifikat Magang S7 PT Telkomsat" class="gallery-img" />
+            <div class="gallery-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+              <span>Perbesar</span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <div class="gallery-cat-badge cat-sertifikat">Sertifikat</div>
+            <h4>Sertifikat Magang S7</h4>
+            <p>PT Telkom Satelit Indonesia &bull; 2025</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" id="lightboxClose" aria-label="Tutup">&times;</button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Pendidikan</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card" id="eduCard1">
+          <div class="edu-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div class="edu-content">
+            <div class="edu-degree">D4 Sarjana Terapan &#8211; Sistem Informasi Bisnis</div>
+            <div class="edu-school">Politeknik Negeri Malang</div>
+            <div class="edu-year">Lulus 2026</div>
+            <div class="edu-status">
+              <span class="status-badge status-graduate">Fresh Graduate</span>
+              <span class="status-badge status-pending">Menunggu SKL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-section" id="certSection">
+          <h3 class="cert-title">Sertifikasi & Pelatihan</h3>
+          <div class="cert-list">
+            <div class="cert-item" id="cert1">
+              <div class="cert-icon">🏅</div>
+              <div class="cert-info">
+                <strong>Network Administrator Muda</strong>
+                <span>Sertifikasi Kompetensi &#8211; LSP bekerja sama dengan BNSP</span>
+                <span class="cert-org">Politeknik Negeri Malang</span>
+                <span class="cert-status-pending">&#9201; Sertifikat Dalam Proses</span>
+              </div>
+            </div>
+            <div class="cert-item" id="cert2">
+              <div class="cert-icon">📜</div>
+              <div class="cert-info">
+                <strong>Implementasi IT Governance</strong>
+                <span>Pengelolaan ISO 27001 &amp; ISO 20000 &#8211; Praktik Langsung</span>
+                <span class="cert-org">PT Telkom Satelit Indonesia</span>
+              </div>
+            </div>
+            <div class="cert-item" id="cert3">
+              <div class="cert-icon">🔐</div>
+              <div class="cert-info">
+                <strong>Audit CSIRT &#8211; IKAS Framework</strong>
+                <span>Partisipasi Audit Keamanan Siber Organisasi</span>
+                <span class="cert-org">Badan Siber dan Sandi Negara (BSSN)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-sub">Terbuka untuk peluang di bidang IT Audit, IT Governance, Internal Audit, dan posisi
+          terkait.</p>
+      </div>
+
+      <div class="contact-grid contact-grid-simple">
+        <div class="contact-info contact-info-centered">
+          <div class="contact-card" id="contactEmail">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,12 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:nara.nabilarahmah13@gmail.com" class="contact-value"
+                id="emailLink">nara.nabilarahmah13@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card" id="contactPhone">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Telepon / WhatsApp</div>
+              <a href="tel:+6282131094916" class="contact-value" id="phoneLink">+62 821-3109-4916</a>
+            </div>
+          </div>
+
+          <div class="contact-card" id="contactLocation">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Domisili</div>
+              <span class="contact-value">Malang, Jawa Timur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Portfolio</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">
+          © 2026 · Terima Kasih ❤️
+        </p>
+        <div class="footer-links">
+          <a href="#hero" id="footerHome">Home</a>
+          <a href="#experience" id="footerExp">Experience</a>
+          <a href="#contact" id="footerContact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
