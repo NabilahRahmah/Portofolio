@@ -40,11 +40,10 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 /* ── Typewriter Effect ─────────────────────────────── */
 const roles = [
-  'IT Governance & Audit Specialist',
-  'Marketing Communication Specialist',
+  'IT Governance Specialist',
   'Data Analyst (Power BI & Excel)',
-  'AI-Assisted Workflow Practitioner',
-  'BNSP Certified (Pemasaran / CRM)'
+  'BNSP Certified (Pemasaran / CRM)',
+  'AI-Assisted Workflow Practitioner'
 ];
 let roleIdx = 0, charIdx = 0, isDeleting = false;
 const roleEl = document.getElementById('roleText');
