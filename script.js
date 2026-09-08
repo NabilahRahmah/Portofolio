@@ -40,11 +40,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 /* ── Typewriter Effect ─────────────────────────────── */
 const roles = [
-  'MarCom Specialist',
-  'AI Content Strategist',
-  'Short-Form Video Creator (CapCut/Canva)',
-  'Marketing Data Analyst',
-  'CRM & Event Coordinator'
+  'IT Governance & Audit Specialist',
+  'Marketing Communication Specialist',
+  'Data Analyst (Power BI & Excel)',
+  'AI-Assisted Workflow Practitioner',
+  'BNSP Certified (Pemasaran / CRM)'
 ];
 let roleIdx = 0, charIdx = 0, isDeleting = false;
 const roleEl = document.getElementById('roleText');
