@@ -40,11 +40,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 /* ── Typewriter Effect ─────────────────────────────── */
 const roles = [
-  'IT Auditor',
-  'IT Governance Analyst',
-  'Junior Internal Auditor',
-  'Junior IT Risk Analyst',
-  'Data Analyst'
+  'MarCom Specialist',
+  'AI Content Strategist',
+  'Short-Form Video Creator (CapCut/Canva)',
+  'Marketing Data Analyst',
+  'CRM & Event Coordinator'
 ];
 let roleIdx = 0, charIdx = 0, isDeleting = false;
 const roleEl = document.getElementById('roleText');
@@ -190,12 +190,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('mousemove', (e) => {
   const x = (e.clientX / window.innerWidth - 0.5) * 18;
   const y = (e.clientY / window.innerHeight - 0.5) * 18;
-  const iso   = document.getElementById('badgeISO');
-  const audit = document.getElementById('badgeAudit');
-  const bi    = document.getElementById('badgeBI');
-  if (iso)   iso.style.transform   = `translate(${x * 0.6}px, ${y * 0.6}px)`;
-  if (audit) audit.style.transform = `translate(${-x * 0.4}px, ${-y * 0.4}px)`;
-  if (bi)    bi.style.transform    = `translate(${x * 0.3}px, ${y * 0.8}px)`;
+  const content = document.getElementById('badgeContent');
+  const ai      = document.getElementById('badgeAI');
+  const crm     = document.getElementById('badgeCRM');
+  if (content) content.style.transform = `translate(${x * 0.6}px, ${y * 0.6}px)`;
+  if (ai)      ai.style.transform      = `translate(${-x * 0.4}px, ${-y * 0.4}px)`;
+  if (crm)     crm.style.transform     = `translate(${x * 0.3}px, ${y * 0.8}px)`;
 });
 
 /* ── Particle dots in background ───────────────────── */
