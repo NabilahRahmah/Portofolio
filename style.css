@@ -1289,6 +1289,107 @@ body::before {
   color: var(--clr-text-muted);
 }
 
+/* Ijazah badge */
+.cat-ijazah {
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--clr-green);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+/* PDF gallery card */
+.gallery-item-pdf .gallery-pdf-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 32px 20px 24px;
+  background: var(--clr-bg);
+  min-height: 200px;
+  text-align: center;
+}
+
+.gallery-pdf-icon {
+  color: var(--clr-primary);
+  opacity: 0.85;
+  transition: var(--transition);
+}
+
+.gallery-item-pdf:hover .gallery-pdf-icon {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.gallery-pdf-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--clr-text-muted);
+  word-break: break-all;
+}
+
+.gallery-pdf-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-pdf-view {
+  background: var(--clr-primary-dim);
+  color: var(--clr-primary);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.btn-pdf-view:hover {
+  background: rgba(56, 189, 248, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-pdf-download {
+  background: rgba(52, 211, 153, 0.12);
+  color: var(--clr-green);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.btn-pdf-download:hover {
+  background: rgba(52, 211, 153, 0.22);
+  transform: translateY(-2px);
+}
+
+/* Ijazah link in edu card */
+.ijazah-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  background: var(--clr-primary-dim);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.ijazah-link:hover {
+  background: rgba(56, 189, 248, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.2);
+}
+
 .gallery-replace-hint {
   display: flex;
   align-items: center;
