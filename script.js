@@ -14,10 +14,10 @@ const sections = document.querySelectorAll('section[id]');
 function updateActiveNav() {
   const scrollY = window.scrollY + 100;
   sections.forEach(section => {
-    const top    = section.offsetTop;
+    const top = section.offsetTop;
     const height = section.offsetHeight;
-    const id     = section.getAttribute('id');
-    const link   = document.querySelector(`.nav-link[href="#${id}"]`);
+    const id = section.getAttribute('id');
+    const link = document.querySelector(`.nav-link[href="#${id}"]`);
     if (link) {
       link.classList.toggle('active', scrollY >= top && scrollY < top + height);
     }
@@ -26,7 +26,7 @@ function updateActiveNav() {
 
 /* ── Hamburger Menu ────────────────────────────────── */
 const hamburger = document.getElementById('hamburger');
-const navLinks  = document.getElementById('navLinks');
+const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   hamburger.classList.toggle('active');
@@ -40,10 +40,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 /* ── Typewriter Effect ─────────────────────────────── */
 const roles = [
-  'IT Governance Specialist',
-  'Data Analyst (Power BI & Excel)',
-  'BNSP Certified (Pemasaran / CRM)',
-  'AI-Assisted Workflow Practitioner'
+  'IT Auditor',
+  'IT Governance Analyst',
+  'Junior Internal Auditor',
+  'Junior IT Risk Analyst',
+  'Data Analyst'
 ];
 let roleIdx = 0, charIdx = 0, isDeleting = false;
 const roleEl = document.getElementById('roleText');
@@ -138,11 +139,11 @@ revealEls.forEach((el, i) => {
 });
 
 /* ── Contact Form ──────────────────────────────────── */
-const form        = document.getElementById('contactForm');
-const successMsg  = document.getElementById('formSuccess');
-const submitBtn   = document.getElementById('submitBtn');
+const form = document.getElementById('contactForm');
+const successMsg = document.getElementById('formSuccess');
+const submitBtn = document.getElementById('submitBtn');
 
-form.addEventListener('submit', (e) => {
+if (form) form.addEventListener('submit', (e) => {
   e.preventDefault();
   submitBtn.disabled = true;
   submitBtn.innerHTML = `
@@ -176,7 +177,7 @@ document.head.appendChild(style);
 
 /* ── Smooth scroll for all internal links ──────────── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
@@ -189,25 +190,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('mousemove', (e) => {
   const x = (e.clientX / window.innerWidth - 0.5) * 18;
   const y = (e.clientY / window.innerHeight - 0.5) * 18;
-  const content = document.getElementById('badgeContent');
-  const ai      = document.getElementById('badgeAI');
-  const crm     = document.getElementById('badgeCRM');
-  if (content) content.style.transform = `translate(${x * 0.6}px, ${y * 0.6}px)`;
-  if (ai)      ai.style.transform      = `translate(${-x * 0.4}px, ${-y * 0.4}px)`;
-  if (crm)     crm.style.transform     = `translate(${x * 0.3}px, ${y * 0.8}px)`;
+  const iso = document.getElementById('badgeISO');
+  const audit = document.getElementById('badgeAudit');
+  const bi = document.getElementById('badgeBI');
+  if (iso) iso.style.transform = `translate(${x * 0.6}px, ${y * 0.6}px)`;
+  if (audit) audit.style.transform = `translate(${-x * 0.4}px, ${-y * 0.4}px)`;
+  if (bi) bi.style.transform = `translate(${x * 0.3}px, ${y * 0.8}px)`;
 });
 
 /* ── Particle dots in background ───────────────────── */
 (function createParticles() {
-  const canvas  = document.getElementById('bgCanvas');
-  const count   = 28;
+  const canvas = document.getElementById('bgCanvas');
+  const count = 28;
   for (let i = 0; i < count; i++) {
     const dot = document.createElement('div');
     const size = Math.random() * 3 + 1;
-    const x    = Math.random() * 100;
-    const y    = Math.random() * 100;
-    const dur  = Math.random() * 12 + 8;
-    const del  = Math.random() * 8;
+    const x = Math.random() * 100;
+    const y = Math.random() * 100;
+    const dur = Math.random() * 12 + 8;
+    const del = Math.random() * 8;
     dot.style.cssText = `
       position: absolute;
       width: ${size}px; height: ${size}px;
@@ -223,7 +224,7 @@ window.addEventListener('mousemove', (e) => {
   pStyle.textContent = `
     @keyframes particle-float {
       from { transform: translate(0,0) scale(1); opacity: 0.4; }
-      to   { transform: translate(${Math.random()*40-20}px,${Math.random()*40-20}px) scale(1.5); opacity: 0; }
+      to   { transform: translate(${Math.random() * 40 - 20}px,${Math.random() * 40 - 20}px) scale(1.5); opacity: 0; }
     }
   `;
   document.head.appendChild(pStyle);
@@ -232,9 +233,9 @@ window.addEventListener('mousemove', (e) => {
 /* ── Gallery Filter (Not used since tabs are removed) ── */
 
 /* ── Lightbox ──────────────────────────────────────── */
-const lightbox     = document.getElementById('lightbox');
-const lightboxImg  = document.getElementById('lightboxImg');
-const lightboxCap  = document.getElementById('lightboxCaption');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCap = document.getElementById('lightboxCaption');
 
 function openLightbox(src, caption) {
   lightboxImg.src = src;
