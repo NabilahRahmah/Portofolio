@@ -1296,76 +1296,22 @@ body::before {
   border: 1px solid rgba(52, 211, 153, 0.3);
 }
 
-/* PDF gallery card */
-.gallery-item-pdf .gallery-pdf-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 32px 20px 24px;
-  background: var(--clr-bg);
-  min-height: 200px;
-  text-align: center;
-}
-
-.gallery-pdf-icon {
-  color: var(--clr-primary);
-  opacity: 0.85;
-  transition: var(--transition);
-}
-
-.gallery-item-pdf:hover .gallery-pdf-icon {
-  opacity: 1;
-  transform: scale(1.08);
-}
-
-.gallery-pdf-label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--clr-text-muted);
-  word-break: break-all;
-}
-
-.gallery-pdf-actions {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.btn-pdf {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 7px 14px;
-  border-radius: var(--radius-sm);
-  transition: var(--transition);
+/* PDF gallery iframe */
+.gallery-pdf-frame-wrap {
   cursor: pointer;
 }
 
-.btn-pdf-view {
-  background: var(--clr-primary-dim);
-  color: var(--clr-primary);
-  border: 1px solid rgba(56, 189, 248, 0.3);
+.gallery-pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none; /* Let the wrap handle clicks */
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.btn-pdf-view:hover {
-  background: rgba(56, 189, 248, 0.25);
-  transform: translateY(-2px);
-}
-
-.btn-pdf-download {
-  background: rgba(52, 211, 153, 0.12);
-  color: var(--clr-green);
-  border: 1px solid rgba(52, 211, 153, 0.3);
-}
-
-.btn-pdf-download:hover {
-  background: rgba(52, 211, 153, 0.22);
-  transform: translateY(-2px);
+.gallery-pdf-frame-wrap:hover .gallery-pdf-frame {
+  transform: scale(1.06);
 }
 
 /* Ijazah link in edu card */
